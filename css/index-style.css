@@ -1,0 +1,12 @@
+body{
+    border:2px dashed tomato;
+    color: aqua;
+    color: #ddd;
+}
+
+.ds{
+    background-color:red;
+    font-size:2.5em;
+    display: flex;
+    flex-direction: row;
+}
