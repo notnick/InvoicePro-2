@@ -22,12 +22,14 @@
 
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300&subset=cyrillic' rel='stylesheet' type='text/css'>
+<!--
     <link rel="shortcut icon" type="image/x-icon" href="ico/new.ico">
+-->
     <link rel="stylesheet"  href="css/index-style.css">
 
-    <title>TEMPLATE</title>
+    <title>InvoicePro2 Beta</title>
   </head>
-  <body ng-controller="myAppController">
+  <body ng-controller="mainController">
     <noscript>
       &lt;style type="text/css"&gt;
         #noscript {display: block;}
@@ -35,12 +37,15 @@
       &lt;div id="noscript"&gt;Вашият браузър не поддържа Java Script или сте го изключили. Поради тази причина, този сайт може да бъде възпроизведен само отчасти. Моля активирайте Javascript във вашия браузър.&lt;/div&gt;
     </noscript>
 
-    <div class="container">
-        <h1>{{message}}</h1>
-    <div>
+
+    <div ng-view></div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+    <script>
 
 
-
+    </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

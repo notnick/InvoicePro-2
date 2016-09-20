@@ -1,12 +1,123 @@
-body{
-    border:2px dashed tomato;
-    color: aqua;
-    color: #ddd;
+
+html,body{
+  margin:0;
+  padding:0
 }
 
-.ds{
-    background-color:red;
-    font-size:2.5em;
-    display: flex;
-    flex-direction: row;
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: 'Comfortaa', "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+a:hover{
+  text-decoration: none;
+}
+.full-hero-div{
+  height: 100vh;
+  background-image: url("../media/stock2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:black;
+}
+
+/*NAVBAR  */
+
+.navbar {
+    position: relative;
+    min-height: 55px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+.navbar-inverse {
+    background-color: #137e8a;
+    border-color: #137e8a;
+}
+/*NAVBAR  END*/
+
+/*BETA NOTE */
+
+#beta-note{
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: absolute;
+  border-top: 0 solid transparent;
+  border-bottom: 3em solid transparent;
+  border-left: 3em solid #FF6B6B;
+  width: 0;
+  height: 0;
+}
+#beta-note:before {
+    top: 0;
+    left: -4em;
+    color: #fff;
+    cursor: help;
+    font-size: 10px;
+    font-weight: 300;
+    position: absolute;
+    line-height: 2.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    content: 'beta';
+    width: 3em;
+    height: 3em;
+    -webkit-transform: rotate(-45deg)scale(1)translate(0,0);
+    -ms-transform: rotate(-45deg)scale(1)translate(0,0);
+    transform: rotate(-45deg)scale(1)translate(0,0);
+}
+
+/*BETA NOTE END*/
+
+.reg-box{
+    margin-top: 8%;
+    background: #FFFFFF;
+    color:black;
+    height:320px;
+    width:280px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.reg-header{
+  font-size:1.8em;
+  border-bottom: 2px solid #1695A3;
+  padding-top: 10px;
+  margin-bottom: 18px;
+  min-height: 45px;
+}
+
+.reg-field{
+  font-size:1.5em;
+  min-height: 40px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+  .reg-field input{
+    width: 85%;
+    margin: 0 auto;
+    border: 0;
+    background: #f2f2f2;
+  }
+  .reg-field-label{
+    margin-bottom: 8px;
+  }
+  .reg-btn{
+    margin-top: 25px;
+
+
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+
+#reg-btn{
+  background-color: #1695A3;
 }
